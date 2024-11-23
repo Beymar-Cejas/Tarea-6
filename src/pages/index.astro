@@ -1,11 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import  IncrementButton  from '../components/Button'
+import BuyList from '../components/BuyList';
+
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<IncrementButton client:load/>
+		<BuyList client:load />
 	</main>
 </Layout>
 
