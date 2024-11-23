@@ -2,13 +2,21 @@
 import Layout from '../layouts/Layout.astro';
 import  IncrementButton  from '../components/Button'
 import BuyList from '../components/BuyList';
-
+const buyList = [
+  'Controller',
+  'Bread',
+  'Water',
+  'Notebook',
+  'Math Book',
+  'Choco Bar',
+  'Milk'
+];
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<IncrementButton client:load/>
-		<BuyList client:load />
+		<BuyList buyList={buyList} client:load />
 	</main>
 </Layout>
 

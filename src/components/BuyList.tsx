@@ -1,16 +1,10 @@
 import React from 'react';
 
-const BuyList: React.FC = () => {
-  const buyList = [
-    'Controller',
-    'Bread',
-    'Water',
-    'Notebook',
-    'Math Book',
-    'Choco Bar',
-    'Milk'
-  ];
+interface BuyListProps {
+  buyList: string[];
+}
 
+const BuyList: React.FC<BuyListProps> = ({ buyList }) => {
   return (
     <ul>
       {buyList.map((item, index) => (
